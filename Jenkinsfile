@@ -38,7 +38,7 @@ pipeline {
                      "C:\\Users\\psubr\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t agrismart:latest .
                     '''
                      }
-                          }
+                         }
 
     post {
         success {
