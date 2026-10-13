@@ -30,12 +30,15 @@ pipeline {
             }
         }
 
+
         stage('Build Docker image') {
-            steps {
-                bat 'docker build -t agrismart:latest .'
-            }
-        }
-    }
+             steps {
+                   bat '''
+                     "C:\\Users\\psubr\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" --version
+                     "C:\\Users\\psubr\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t agrismart:latest .
+                    '''
+                     }
+                          }
 
     post {
         success {
